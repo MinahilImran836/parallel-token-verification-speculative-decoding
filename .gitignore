@@ -1,0 +1,41 @@
+# Python virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Compiled binaries
+src/sequential/main_seq
+src/pthreads/main_pth
+src/openmp/main_omp
+src/mpi/main_mpi
+*.o
+*.out
+
+# Large generated datasets (regenerate with data/data_generator.ipynb)
+*.bin
+
+# Submission archive
+*.zip
+
+# Raw experiment outputs (regenerate with scripts/run_experiments.sh)
+results/raw_outputs/
+
+# LaTeX build artifacts (compiled PDFs live in docs/)
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+paper/*.pdf
+
+# Third-party papers (copyrighted; cited in the README instead)
+literature_review/*
+!literature_review/Literature Review_ Speculative Decoding Large Language Models.pdf
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
